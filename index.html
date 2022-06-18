@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Webapp Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/768.css">
+  <link rel="stylesheet" href="css/320.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script src="dependencies/chart.min.js"></script>  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <div class="grid-container">
+   <!-- header starts here -->
+  <div class="header">
+    <ul class="header-item">
+     <li class="name">Webapp &trade;</li>
+     <li><img src="svgs/bell.svg" alt="Drawing of member-1" class="bell"></li>
+     <li><img src="images/member-1.jpg" alt="Drawing of member-1" class="member-1"></li>
+     <li class="student">Student Name</li>
+    </ul>
+  </div>
+  <!-- header ends here -->
+
+<!-- start of sidebar icons -->
+
+  <div class="menu">
+    <ul class="nav-icons">
+      <li><img src="svgs/home.svg" alt="home" class="menu-icon"></li>
+      <li><img src="svgs/bar-chart.svg" alt="bar-chart" class="menu-icon"></li>
+      <li><img src="svgs/members.svg" alt="members" class="menu-icon"></li>
+      <li><img src="svgs/settings.svg" alt="settings" class="menu-icon"></li>
+   </ul>
+  </div>
+<!-- end of sidebar icons -->
+
+<!-- start of Dashboard -->
+  <div class="main-contents">
+   <div class="title-row">
+    <div class="Dashboard-title">
+    <h2>Dashboard</h2>
+    </div>
+    <div class="empty-div">
+    </div>
+    </div>
+    <div class="alert">
+     <h2>Alert: You have a new message<span class="close">x</span></h2>
+    </div>
+
+    <div class="web-traffic">
+      <p><b>TRAFFIC</b></p>
+      <div class="time-range">
+      <div class="time-range-value monthly">Monthly</div>
+      <div class="time-range-value weekly">Weekly</div>
+      <div class="time-range-value daily">Daily</div>
+      <div class="time-range-value hourly">Hourly</div>
+    </div>
+      <!-- end of Dashboard -->
+
+<!-- start of daily traffic  -->
+      <canvas id="web-traffic"></canvas>
+    </div>
+
+    <div class="traffic2">
+      <div class="c1">
+      <p><b>DAILY TRAFFIC</b></p>
+      <canvas id="daily-traffic" class="daily-traffic canvas"></canvas>
+      </div>
+      <div class="c2">
+        <P><b>MOBILE USERS</b></P>
+        <canvas id="mobile-users" class="mobile-users canvas"></canvas>
+      </div>
+    </div>
+<!-- end of daily traffic  -->
+<!-- start of social stats -->
+    <div class="social-stats">
+        <P><b>SOCIAL STATS</b></P>
+      <div class="social">
+         <img src="svgs/facebook.svg" alt="facebook" class="facebook">
+        <div>
+         <p class="social-name">Facebook</p>
+         <p class="social-number">10,320</p>
+        </div>
+      </div>
+      <div class="social">
+         <img src="svgs/instagram.svg" alt="instagram" class="instagram">
+         <div>
+         <p class="social-name">Instagram</p>
+         <p class="social-number">16,445</p>
+         </div>
+      </div>
+      <div class="social">
+         <img src="svgs/twitter.svg" alt="twitter" class="twitter">
+         <div>
+         <p class="social-name">Twitter</p>
+         <p class="social-number">22,189</p>
+         </div>
+      </div>
+   </div>
+<!-- end of social stats -->
+<!-- start new members -->
+<div class="member-col-1">
+    <h4>NEW MEMBERS</h4>
+    <div class="new-members">
+       <img src="images/member-1.jpg" alt="Drawing of member-1" class="member-image column">
+    <div class="student-info column">
+       <p class="member-name">Victoria Chambers</p>
+       <p class="students-email">victoria.chambers80@example.com</p>
+    </div>
+    <div class="date column">
+       <p class="date">10/15/20</p>
+    </div>
+    </div>
+
+    <div class="new-members">
+       <img src="images/member-2.jpg" alt="Drawing of member-1" class="member-image column">
+    <div class="student-info column">
+       <p class="member-name">Dale Byrd</p>
+       <p class="students-email">dale.byrd5280@example.com</p>
+    </div>
+    <div class="date column">
+       <p class="date">10/15/20</p>
+    </div>
+    </div>
+
+    <div class="new-members">
+       <img src="images/member-3.jpg" alt="Drawing of member-1" class="member-image column">
+    <div class="student-info column">
+       <p class="member-name">Dawn Woods</p>
+       <p class="students-email">dawn.wood16@example.com</p>
+    </div>
+    <div class="date column">
+       <p class="date">10/15/20</p>
+    </div>
+    </div>
+
+    <div class="new-members last">
+       <img src="images/member-4.jpg" alt="Drawing of member-1" class="member-image column">
+    <div class="student-info column">
+       <p class="member-name">Dan Oliver</p>
+       <p class="students-email">dan.oliver82@example.com</p>
+    </div>
+    <div class="date column">
+       <p class="date">10/15/20</p>
+    </div>
+    </div>
+</div>
+<!-- end of new members -->
+<!-- start of recent activity -->
+  <div class="member-col-2">
+    <h4>RECENT ACTIVITIES</h4>
+
+    <div class="new-activity">
+       <img src="images/member-1.jpg" alt="Drawing of member-1" class="member-image column">
+    <div class="activity column">
+       <p class="comment">Victoria Chambers commmented on <b>WebApp's SEO tips</b></p>
+       <p class="time">4 hours ago</p>
+    </div>
+    <div class="arrow-col column">
+       <p class="arrow">></p>
+    </div>
+    </div>
+
+    <div class="new-activity">
+       <img src="images/member-2.jpg" alt="Drawing of member-1" class="member-image column">
+    <div class="activity column">
+       <p class="comment">Dale liked the post of <b>facebook's changes for 2021</b></p>
+       <p class="time">5 hours ago</p>
+    </div>
+    <div class="arrow-col column">
+       <p class="arrow">></p>
+    </div>
+    </div>
+
+    <div class="new-activity">
+       <img src="images/member-3.jpg" alt="Drawing of member-1" class="member-image column">
+    <div class="activity column">
+       <p class="comment">Dawn Wood commmented on <b>facebook's changes for 2021</b></p>
+       <p class="time">5 hours ago</p>
+    </div>
+    <div class="arrow-col column">
+       <p class="arrow">></p>
+    </div>
+    </div>
+
+    <div class="new-activity last">
+       <img src="images/member-4.jpg" alt="Drawing of member-1" class="member-image column">
+    <div class="activity col column">
+       <p class="comment">Dan Oliver posted <b>WebApp's SEO tips</b></p>
+       <p class="time">1 day ago</p>
+    </div>
+    <div class="arrow-col column">
+       <p class="arrow">></p>
+    </div>
+    </div>
+<!-- end of recent activity -->
+
+
+    </div>
+<!-- start of message -->
+  <!-- <h4 class="message">MESSAGE USER</h4> -->
+
+  <div class="message-col">
+  <form>
+  <h4 class="settings">MESSAGE USER</h4>
+    <div class="message">
+      <div class="input-wrap">
+      <label class="input-label" for="name"</label>
+      <input  type="text" id="name" name="user_name" class="input-field" placeholder="Search for user">
+    </div>
+
+    </div>
+    <br>
+  <div class="message">
+    <textarea id="story" name="story" rows="5" cols="33" class="textarea" placeholder="Message for User"></textarea>
+  </div>
+   <br>
+  <div>
+   <button class="favorite styled" type="submit"> Send
+  </button>
+  </div>
+  </form>
+  </div>
+<!-- end of message -->
+
+<!-- start of settings -->
+
+
+
+<div class="settings-col">
+  <form>
+  <h4 class="settings">SETTINGS</h4>
+  <label for="send-email" class="label">Send Email Notification
+
+<div class="switch">
+  <input type="checkbox" id="send-email" checked>
+
+  <span class="slider round">ON</span>
+  </div>
+  </label>
+
+  <br>
+  <br>
+  <br>
+  <label for="set-profile" class="label">Set Profile to Public
+
+  <div class="switch slider1">
+  <input type="checkbox" id="set-profile" checked>
+
+  <span class="slider round">ON</span>
+  </div>
+  </label>
+
+  <br>
+  <select id="timezone" class="timezone" name="timezone" placeholder="Select Timezone">
+    Select Timezone
+    <option value="timezone">Select TimeZone</option>
+  </select><br>
+  <button class="save">Save</button>
+  <button class="cancel">Cancel</button>
+  </form>
+</div>
+
+<!-- end of settings -->
+
+    </div>
+  </div>
+
+<script src="js/web-traffic.js"></script>
+<script src="js/daily-traffic.js"></script>
+<script src="js/mobile-users.js"></script>
+</body>
+</html>
