@@ -3,7 +3,11 @@ const myChart2 = new Chart(ctx2, {
     type: 'doughnut',
 
     data: {
-
+      labels: [
+        'Desktop',
+        'Tablets',
+        'Phones'
+      ],
         datasets: [{
 
             // label: 'MOBILE USERS',
@@ -18,11 +22,24 @@ const myChart2 = new Chart(ctx2, {
         }]
     },
     options: {
-    legend: {
-      labels: {
-        padding: 20
-      }
-    }
-  }
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'right',
+          labels: {
+            
+          },
+        },
+      },
+  //   legend: {
+  //     display: true,
+  //     position: 'right',
+  //     labels: {
+  //     padding: 20
+  //
+  //   },
+  //
+  // },
+},
 
 });
