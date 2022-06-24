@@ -37,7 +37,22 @@
     width: 28px;
     height: 28px;
     padding-right: 10px;
-    border-right: 1px solid #e6e6e6;
+
+  }
+
+  .bell:hover {
+    width: 33px;
+    height: 33px;
+  }
+
+  .notification .badge {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding: 5px 5px;
+    border-radius: 100%;
+    background: #90EE90;
+    color: white;
   }
 
   .member-1 {
@@ -176,6 +191,7 @@
   } */
 
   .traffic2 {
+    padding-right: 10px;
     border-top: 1px solid #e1e1e1;
     /* border-bottom: 1px solid #e1e1e1; */
    margin-top: 380px;
@@ -201,10 +217,6 @@
      width: 300px;
      height: 300px;
      padding-right: 20px;
-
-     /* margin-left: -30px; */ */
-
-
    }
 
      .c1 {
@@ -230,7 +242,7 @@
 
 
    .c2 p{
-     margin-left: 20px;
+     margin-left: 2px;
 
 
    }
@@ -244,20 +256,20 @@
 
 
   .mobile-users {
-
+    /* width: 90%; */
     height: 165px;
-    margin-left: 0px;
+
     padding-bottom: 25px;
-     padding-left: 30px;
+    margin-left:  10px;
+    margin-right: 10px;
 
 
   }
 
   .social-stats {
-
     width: 100%;
     height: 150px;
-    margin-top: 0px;
+    margin-top: -28px;
     margin-left: 10px;
     margin-bottom: 0px;
 
@@ -280,7 +292,7 @@
     margin-left: 2px;
   }
 
-  .social img  {
+  .social svg  {
     width: 50px;
     height: 50px;
     float: left;

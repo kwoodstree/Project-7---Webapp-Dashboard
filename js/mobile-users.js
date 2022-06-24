@@ -27,10 +27,10 @@ const myChart2 = new Chart(ctx2, {
         legend: {
           position: 'right',
           labels: {
-            
+            // padding: 3
           },
         },
-      },
+      }
   //   legend: {
   //     display: true,
   //     position: 'right',
