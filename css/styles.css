@@ -240,7 +240,7 @@
   height: 35px;
   margin-top: 10px;
   margin-left: 15px;
-  padding: 7px;
+  padding: 6px;
   margin-bottom: 10px;
   background-color: #7477BF;
   border-radius: 25px;
@@ -774,7 +774,7 @@ input:checked + .slider:before {
   .social svg  {
     width: 50px;
     height: 50px;
-    padding: 10px;
+    padding: 5px;
     /* padding-bottom: 20px; */
     border-radius: 25px;
 }
@@ -1314,17 +1314,24 @@ input:checked + .slider:before {
 
     /* start of daily traffic2 */
     .traffic2 .daily-traffic {
-      width: 50%;
+      width: 37.5%;
       height: 275px;
       padding-left: 20px;
+
     }
 
+    /* .traffic2 .mobile-users {
+
+      background-color: purple;
+      margin-right: 50px;
+    } */
+
     .c2 p {
-      margin-left: -150px;
+      margin-left: -175px;
     }
 
     .c2 {
-      width: 40%;
+      width: 37.5%;
       height: 100px;
     }
 
@@ -1367,10 +1374,12 @@ input:checked + .slider:before {
     .social svg  {
       width: 50px;
       height: 50px;
+      padding: 4px;
       float: left;
       margin-top: 15px;
       margin-left: 10px;
-      padding-bottom: 10px;
+      /* padding-bottom: 10px; */
+
     }
 
 
