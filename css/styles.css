@@ -186,10 +186,10 @@
  .traffic2 {
    display: block;
   margin-top: 10px;
-  /* height: 20px; */
+
   width: 100%;
   height: 200%;
-  /* margin-bottom: 20px; */
+
   padding-left: 30px;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
@@ -298,13 +298,7 @@
 
 }
 
-.message-settings {
-  display: flex;
-}
 
-.message-col, .settings-col {
-  flex-basis: 50%;
-}
 
 .member-image {
  margin-top: 15px;
@@ -1265,7 +1259,7 @@ input:checked + .slider:before {
 
 
     .empty-div {
-      margin-top: 5px;
+      margin-top: -50px;
       background-color: #f7f7f7;
       width: 84%;
       height: 90%;
@@ -1305,10 +1299,18 @@ input:checked + .slider:before {
 
     }
     .web-traffic div {
+      /* display: grid; */
       font-size: 13px;
       width: 50px;
-      margin-left: 10px;
+    /* text-align: right; */
+      /* text-align: left; */
+      /* margin-left: -100px; */
       margin-top: -12px;
+      /* float: right; */
+    
+      /* float: right; */
+
+
 
     }
 
@@ -1327,8 +1329,8 @@ input:checked + .slider:before {
 
     /* start of daily traffic2 */
     .traffic2 .daily-traffic {
-      width: 30%;
-      height: 275px;
+      /* width: 30%;
+      height: 275px; */
       padding-left: 20px;
 
     }
@@ -1375,7 +1377,7 @@ input:checked + .slider:before {
 
     .social-stats {
       height: 100px;
-      margin-top: 370px;
+      margin-top: 296px;
       /* border-bottom: 1px solid #e1e1e1; */
     }
 
@@ -1465,3 +1467,40 @@ input:checked + .slider:before {
   .member-col-2 {
     border-bottom: 1px solid #e1e1e1;
   }
+
+  .settings-col br {
+    display: none;
+  }
+
+  .settings-col .label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .switch {
+    height: 50px;
+    float: none !important;
+    margin-bottom: initial;
+    margin-right: initial;
+    margin-top: 10px;
+    flex-basis: 15%;
+  }
+
+  .slider1 {
+    margin-left: 20px !important;
+  }
+
+  .timezone {
+    margin-top: 12px;
+  }
+
+  .message-settings {
+    display: flex;
+  }
+
+  .message-col, .settings-col {
+    flex-basis: 50%;
+  }
+
+}

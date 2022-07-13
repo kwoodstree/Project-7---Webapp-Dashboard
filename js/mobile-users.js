@@ -23,6 +23,7 @@ const myChart2 = new Chart(ctx2, {
     },
     options: {
       responsive: true,
+      aspectRatio: 1,
       plugins: {
         legend: {
           position: 'right',
