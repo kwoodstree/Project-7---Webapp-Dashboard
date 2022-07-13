@@ -298,10 +298,12 @@
 
 }
 
-.message-col {
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+.message-settings {
+  display: flex;
+}
+
+.message-col, .settings-col {
+  flex-basis: 50%;
 }
 
 .member-image {
@@ -1374,8 +1376,7 @@ input:checked + .slider:before {
     .social-stats {
       height: 100px;
       margin-top: 370px;
-      padding-bottom: 150px;
-      border-bottom: 1px solid #e1e1e1;
+      /* border-bottom: 1px solid #e1e1e1; */
     }
 
     .social {
@@ -1423,15 +1424,21 @@ input:checked + .slider:before {
     /* end of social stats */
     /* start of new members */
 
+    .new-members, .activity.column {
+      height: 85px;
+    }
 
+    .new-members.last, .new-activity.last {
+      border-bottom: none;
+    }
 
     .member-col-1 {
-      margin-top: -70px;
       font-size: 15px;
-      /* width: 40%; */
-      float: left;
+      /* width: 49%;
+      float: left; */
       padding-left: 10px;
       padding-right: 15px;
+      border-right: 1px solid #e1e1e1;
       border-top: none;
     }
 
@@ -1440,3 +1447,21 @@ input:checked + .slider:before {
       justify-content: flex-end;
       padding-right: 30px;
 }
+
+  .members-activity {
+    display: flex;
+    border-top: 1px solid #e1e1e1;
+  }
+
+  .member-col-1, .member-col-2{
+    flex-basis: 50%;
+
+  }
+
+  .member-col-2 h4 {
+    margin-top: 20px;
+  }
+
+  .member-col-2 {
+    border-bottom: 1px solid #e1e1e1;
+  }
