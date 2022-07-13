@@ -142,6 +142,11 @@
     padding-left: 20px;
   }
 
+  #web-traffic {
+    margin-top: 25px;
+
+  }
+
 .close {
   padding-left: 60px;
 }
@@ -149,6 +154,7 @@
 .web-traffic {
   padding-left: 8px;
   padding-right: 10px;
+
 }
 
 .web-traffic p{
@@ -156,12 +162,14 @@
   }
 
 .web-traffic div {
+  padding-bottom: 100px;
   display: inline;
   font-size: 13px;
   text-align: center;
   padding: 10px;
   margin-left: -5px;
   margin-top: -12px;
+
   }
 
 .hourly {
@@ -185,12 +193,15 @@
   padding-left: 30px;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
+
  }
 
 .daily-traffic {
   width: 100%;
   margin-left: -5px;
   margin-bottom: 20px;
+
+
 }
 
 .traffic2 p {
@@ -207,6 +218,7 @@
   margin-left: -30px;
   border-bottom: 1px solid #e1e1e1;
   width: 295px;
+
 
 }
 
@@ -679,6 +691,7 @@ input:checked + .slider:before {
     width: 100%;
     padding-bottom: 20px;
     margin-left: 15px;
+    margin-top: 20px;
   }
 
   .web-traffic p {
@@ -687,6 +700,7 @@ input:checked + .slider:before {
     margin-top: 100px;
     margin-right: 330px;
   }
+
 
   .hourly {
     background: #81C98F;
@@ -1252,7 +1266,7 @@ input:checked + .slider:before {
 
 
     .empty-div {
-      margin-top: -50px;
+      margin-top: 5px;
       background-color: #f7f7f7;
       width: 84%;
       height: 90%;
@@ -1392,18 +1406,20 @@ input:checked + .slider:before {
 
 
     .social div {
-      float: right;
+      /* float: right; */
       margin-right: 57%;
 
     }
 
     .social-name {
       color: #7477BF;
-      margin-bottom: 20px;
+      margin-top: 20px;
+      /* margin-bottom: 20px; */
       margin-right: 20px;
     }
 
     .social-number {
+      /* margin-top: 20px; */
       color: #717171;
       font-size: 30px;
     }

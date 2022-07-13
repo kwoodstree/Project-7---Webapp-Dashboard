@@ -3,6 +3,7 @@ const myChart1 = new Chart(ctx1, {
     type: 'bar',
 
     data: {
+
         labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
         datasets: [{
 
@@ -16,6 +17,13 @@ const myChart1 = new Chart(ctx1, {
         }]
     },
     options: {
+      plugins: {
+        legend: {
+          display: false
+
+        }
+      },
+
       responsive: true,
 
         scales: {
