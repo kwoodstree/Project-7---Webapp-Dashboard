@@ -673,6 +673,7 @@ input:checked + .slider:before {
    font-size: 10px;
    background-color: #7477BF;
    width: 99%;
+   height: 90%;
    color: white;
    border-radius: 5px;
    border: 1px solid;
@@ -896,6 +897,10 @@ input:checked + .slider:before {
     font-size: 15px;
     text-align: left;
     margin-left: 0px;
+  }
+
+  .member-col-2 h4 {
+    margin-left: 10px;
   }
 
   .time {
@@ -1238,7 +1243,7 @@ input:checked + .slider:before {
     }
 
     .Dashboard-title h2 {
-      margin-left: -20px;
+      margin-left: -10px;
     }
 
     .close {
@@ -1259,9 +1264,9 @@ input:checked + .slider:before {
 
 
     .empty-div {
-      margin-top: -50px;
+      margin-top: 0px;
       background-color: #f7f7f7;
-      width: 84%;
+      width: 80%;
       height: 90%;
       border-left: 2px solid #E1E1E1;
       border-bottom: 2px solid #E1E1E1;
@@ -1299,25 +1304,32 @@ input:checked + .slider:before {
 
     }
     .web-traffic div {
-      /* display: grid; */
+      display: inline-flex;
       font-size: 13px;
       width: 50px;
     /* text-align: right; */
       /* text-align: left; */
       /* margin-left: -100px; */
-      margin-top: -12px;
+      margin-top: -8px;
       /* float: right; */
-    
-      /* float: right; */
+
+      float: right;
 
 
 
     }
 
     .time-range {
-    margin-right: 0px;
+    display: flex; !important
 
+    }
 
+    .time-range-value:first-of-type {
+      margin-left: auto;
+    }
+
+    .web-traffic div {
+      width: initial;
     }
 
     .hourly {
